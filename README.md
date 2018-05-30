@@ -1,6 +1,13 @@
 # UILabelStyles
 A sample app applying multiple styles to UIlabel using Attributed String.
 
+![img_9242](https://user-images.githubusercontent.com/6782228/40703744-ca413c3e-6403-11e8-9558-41378c0aaabb.PNG)
+
+
+![img_9242](https://user-images.githubusercontent.com/6782228/40703727-bd8c7616-6403-11e8-988f-51f8b27e75b7.PNG)
+
+
+
 For these styles to work, first all the labels need to be vertically adjusted. So I use a subclass `VerticalTopAlignLabel`
 Most styles are applied using `NSMutableAttributedString` extensions
 ##Styles
