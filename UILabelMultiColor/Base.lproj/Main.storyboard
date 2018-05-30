@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UILabelMultiColor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjf-77-0aM" customClass="VerticalTopAlignLabel" customModule="UILabelMultiColor" customModuleProvider="target">
+                                <rect key="frame" x="16" y="393" width="326" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-fH-Xsv" customClass="VerticalTopAlignLabel" customModule="UILabelMultiColor" customModuleProvider="target">
+                                <rect key="frame" x="16" y="224" width="326" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-4n-kX2">
+                                <rect key="frame" x="26" y="566" width="326" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ppU-nq-Tr7">
+                                <rect key="frame" x="16" y="28" width="344" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYN-E4-hOz">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="88"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2l-TO-4bY" customClass="VerticalTopAlignLabel" customModule="UILabelMultiColor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="344" height="88"/>
+                                                <string key="text">This is label style with solid highlight and have gap between the texts, uses a combination of UIView and UILabel, you can have borders also per line... check comments in the code</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="g2l-TO-4bY" firstAttribute="top" secondItem="cYN-E4-hOz" secondAttribute="top" id="Rl1-GI-sk7"/>
+                                            <constraint firstAttribute="bottom" secondItem="g2l-TO-4bY" secondAttribute="bottom" id="gI3-mN-3Gh"/>
+                                            <constraint firstItem="g2l-TO-4bY" firstAttribute="leading" secondItem="cYN-E4-hOz" secondAttribute="leading" id="u3d-NL-Hji"/>
+                                            <constraint firstAttribute="trailing" secondItem="g2l-TO-4bY" secondAttribute="trailing" id="w2H-bR-Hrx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cYN-E4-hOz" firstAttribute="leading" secondItem="ppU-nq-Tr7" secondAttribute="leading" id="8mL-Sb-dlS"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYN-E4-hOz" secondAttribute="trailing" id="Ach-ey-wkE"/>
+                                    <constraint firstItem="cYN-E4-hOz" firstAttribute="top" secondItem="ppU-nq-Tr7" secondAttribute="top" id="gZA-0y-Hzq"/>
+                                    <constraint firstAttribute="bottom" secondItem="cYN-E4-hOz" secondAttribute="bottom" id="mES-Hr-BYq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ppU-nq-Tr7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="5jz-xE-I7U"/>
+                            <constraint firstAttribute="trailing" secondItem="ppU-nq-Tr7" secondAttribute="trailing" constant="15" id="Ebl-YU-HiZ"/>
+                            <constraint firstItem="ppU-nq-Tr7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TiJ-Mz-kgJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgColorlabel" destination="cjf-77-0aM" id="rVM-ET-hZi"/>
+                        <outlet property="bgView" destination="cYN-E4-hOz" id="DRb-ez-dqf"/>
+                        <outlet property="borderLabel" destination="g2l-TO-4bY" id="ebR-l6-qvV"/>
+                        <outlet property="multicolorLabel" destination="gdM-4n-kX2" id="w9O-Sv-WbO"/>
+                        <outlet property="underline" destination="uwl-fH-Xsv" id="RKI-0O-Rsb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
