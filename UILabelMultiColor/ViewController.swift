@@ -116,12 +116,20 @@ class ViewController: UIViewController {
 }
 
 extension NSMutableAttributedString{
-    func setColorForText(_ textToFind: String, with color: UIColor) {
-        let range = self.mutableString.range(of: textToFind, options: .caseInsensitive)
-        if range.location != NSNotFound {
-            addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range)
+    // If no text is send, then the style will be applied to full text
+    func setColorForText(_ textToFind: String?, with color: UIColor) {
+        
+        let range:NSRange?
+        if let text = textToFind{
+            range = self.mutableString.range(of: text, options: .caseInsensitive)
+        }else{
+            range = NSMakeRange(0, self.length)
+        }
+        if range!.location != NSNotFound {
+            addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range!)
         }
     }
+    // If no text is send, then the style will be applied to full text
     func setHighlightColorForText(_ textToFind:String?,with color:UIColor){
         
         let range:NSRange?
@@ -136,6 +144,7 @@ extension NSMutableAttributedString{
         }
     }
     
+    // If no text is send, then the style will be applied to full text
     func setUnderlineWith(_ textToFind:String?, with color: UIColor){
         let range:NSRange?
         if let text = textToFind{
