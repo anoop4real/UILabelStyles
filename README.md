@@ -3,8 +3,7 @@ A sample app applying multiple styles to UIlabel using Attributed String.
 
 ![img_9242](https://user-images.githubusercontent.com/6782228/40703744-ca413c3e-6403-11e8-9558-41378c0aaabb.PNG)
 
-
-![img_9242](https://user-images.githubusercontent.com/6782228/40703727-bd8c7616-6403-11e8-988f-51f8b27e75b7.PNG)
+![img_d10bd9d553fd-1](https://user-images.githubusercontent.com/6782228/40704906-1e1e11da-6407-11e8-85a1-e5940ec40d9c.jpeg)
 
 
 
