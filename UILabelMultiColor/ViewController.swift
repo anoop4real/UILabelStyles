@@ -103,9 +103,9 @@ class ViewController: UIViewController {
             border.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
             border.frame = CGRect(x: 0, y: CGFloat(i), width: borderLabel.frame.size.width, height: CGFloat(FONT_SIZE - 1) )
             // Uncomment the below lines to have borders per line.
-            //border.borderWidth = 1.0
-            //border.cornerRadius = 6.0
-            border.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+            border.borderWidth = 1.0
+            border.cornerRadius = 6.0
+            border.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
             borderLabel.layer.addSublayer(border)
             bgView.layer.insertSublayer(border, at: 0)
             count = count + 1
@@ -126,7 +126,7 @@ extension NSMutableAttributedString{
             range = NSMakeRange(0, self.length)
         }
         if range!.location != NSNotFound {
-            addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range!)
+            addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range!)
         }
     }
     // If no text is send, then the style will be applied to full text
@@ -140,7 +140,7 @@ extension NSMutableAttributedString{
         }
         
         if range!.location != NSNotFound {
-            addAttribute(NSAttributedStringKey.backgroundColor, value: color, range: range!)
+            addAttribute(NSAttributedString.Key.backgroundColor, value: color, range: range!)
         }
     }
     
@@ -153,8 +153,8 @@ extension NSMutableAttributedString{
             range = NSMakeRange(0, self.length)
         }
         if range!.location != NSNotFound {
-            addAttribute(NSAttributedStringKey.underlineStyle, value:NSUnderlineStyle.styleThick.rawValue, range: range!)
-            addAttribute(NSAttributedStringKey.underlineColor, value:color , range: range!)
+            addAttribute(NSAttributedString.Key.underlineStyle, value:NSUnderlineStyle.thick.rawValue, range: range!)
+            addAttribute(NSAttributedString.Key.underlineColor, value:color , range: range!)
         }
     }
 }
